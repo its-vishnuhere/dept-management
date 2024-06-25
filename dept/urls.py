@@ -1,0 +1,30 @@
+from . import views
+from django.urls import path
+
+urlpatterns = [
+    path('',views.login,name='login'),
+    path('adduser/',views.adduser,name="adduser"),
+    path('logdata/',views.logdata,name="logdata"),
+    path('manage/',views.manage,name='manage'),
+    path('profiledata/',views.profiledata,name="profiledata"),
+    path('attendance1/',views.attendance1,name='attendance1'),
+    path('teachr/',views.teacher,name='teachr'),
+    path('stdmanage/',views.stdmanage,name='stdmanage'),
+    path('subatt/',views.attendancerec,name='subatt'),
+    path('notifystd/',views.notification_students,name='notifystd'),
+    path('addstudents/',views.add_student,name='addstudents'),
+    path('addteacher/',views.add_teacher,name='addteacher'),
+    path('uploadtt/',views.upload_tt,name='uploadtt'),
+    path('uploaddoc/',views.upload_doc,name='uploaddoc'),
+    path('otpsnd/',views.sendotp,name="otpsnd"),
+    path('cmp/',views.snmail,name='cmp'),
+    path('entemail/',views.emailget,name='entemail'),
+    path('ccpass/',views.cpasswd,name="ccpass"),
+    path('princatt/',views.princ_stdprof,name="princatt"),
+    path('trprprinc/',views.princi_trdt,name="trprprinc"),
+    path('materialsst/',views.matstd,name="materialsst"),
+    path('updatetr/',views.updatetrprofile,name='updatetr'),
+    path('markslst/',views.marksstd,name="markslst"),
+    path('dltrec/',views.dltattrec,name="dltrec"),
+    path('stdprof/',views.stdprincprof,name="stdprof"),
+]

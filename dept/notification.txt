@@ -1,0 +1,9 @@
+print notification at same page
+with a manage button
+
+teachers page -style
+attendace -style
+
+principal->table(options select dept)-> dept details->student detail based on regno or email->attendace details,marklist details
+
+students->field update
